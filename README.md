@@ -10,6 +10,18 @@ The project explores the intersection of **Natural Language Understanding, Infor
 
 ---
 
+## 🚀 Features
+
+* 🔍 **Context-aware question answering** over PDFs
+* 🧠 **RAG pipeline** with persistent vector storage (ChromaDB)
+* 📑 **Page-number grounded answers** to improve trust and traceability
+* ❌ **Anti-hallucination prompt design** (answers strictly from document context)
+* 💾 **Persistent embeddings** for faster repeated queries
+* 🎛️ **Simple Gradio web interface**
+* ⚡ Powered by **Google Gemini** and **MiniLM embeddings**
+
+---
+
 ## Motivation
 
 Large Language Models are prone to hallucination when answering questions over long documents. This project investigates how **retrieval-augmented pipelines, prompt constraints, and citation-aware context formatting** can significantly improve answer faithfulness while maintaining usability.
@@ -105,6 +117,52 @@ This project makes the following applied research contributions:
 
 ---
 
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/pdf-intel-link.git
+cd pdf-intel-link
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 Prerequisites
+
+* Python 3.9+
+* Google Gemini API Key
+
+  * Get it from: [https://ai.google.dev/](https://ai.google.dev/)
+
+  ---
+
+  ---
+
+## ▶️ Usage
+
+```bash
+python app.py
+```
+
+1. Launches a local Gradio app
+2. Enter your **Gemini API key**
+3. Upload a **PDF document**
+4. Ask questions grounded in the document
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── app.py
+├── chroma_db/          # Persistent vector store
+├── requirements.txt
+└── README.md
+```
+
+---
+  
 ## Applications
 
 * Research paper analysis
@@ -133,4 +191,11 @@ Interested in Applied AI Research, LLM Systems, and Information Retrieval
 ---
 
 
-Just tell me which one to do next 🚀
+
+
+
+
+
+
+
+
